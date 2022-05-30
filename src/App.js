@@ -22,7 +22,7 @@ function App() {
     /*global google*/ <------ ESTE COMENTARIO ES ESENCIAL DADO QUE, SI NO ESTA, ESLINT DA ERROR!!!
     google.accounts.id.initialize({
       client_id:
-        "<Your client ID>",
+        "<Your client ID>", <----VISITAR EL SITIO DE GOOGLE IDENTITY SERVICES.
       callback: handleCallbackResponse,
     });
 
