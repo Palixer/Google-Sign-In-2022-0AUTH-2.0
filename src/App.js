@@ -19,10 +19,10 @@ function App() {
   }
 
   useEffect(() => {
-    /*global google*/
+    /*global google*/ <------ ESTE COMENTARIO ES ESENCIAL DADO QUE, SI NO ESTA, ESLINT DA ERROR!!!
     google.accounts.id.initialize({
       client_id:
-        "1019171281039-ofa2mchlau3p39ucggtjcqroal68e703.apps.googleusercontent.com",
+        "<Your client ID>",
       callback: handleCallbackResponse,
     });
 
